@@ -2,12 +2,8 @@ import discord
 from discord.ext import commands
 
 from src import active_guild_id
-from src.EmojiRegistration.EmojiRegistrationCog import EmojiRegistrationCog
-from src.PinSystem.PinCog import PinCog
 from src.RoleManager.RoleManagerCog import RoleManagerCog
 from src.TimestampGenerator import TimestampGenerator
-from src.Translation.TranslationCog import TranslationCog
-from src.WikiCurrentCog.WikiCurrentCog import WikiCurrentCog
 
 ts = TimestampGenerator("BANE")
 
