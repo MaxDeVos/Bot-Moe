@@ -47,11 +47,11 @@ class RoleManagerCog(commands.Cog):
             grade_view.add_item(RoleButton(role, style=discord.ButtonStyle.green))
 
         if send_new:
-            await self.bot.channelDict["bot-channel"].send("**Pronouns (You can select multiple)**", view=pronoun_view)
-            await self.bot.channelDict["bot-channel"].send("**In-Game Role**", view=in_game_view)
-            await self.bot.channelDict["bot-channel"].send("**In-Game Rank**", view=rank_view)
-            await self.bot.channelDict["bot-channel"].send("**Major**", view=major_view)
-            await self.bot.channelDict["bot-channel"].send("**Year**", view=grade_view)
+            await self.bot.channelDict["roles"].send("**Pronouns (You can select multiple)**", view=pronoun_view)
+            await self.bot.channelDict["roles"].send("**In-Game Role**", view=in_game_view)
+            await self.bot.channelDict["roles"].send("**In-Game Rank**", view=rank_view)
+            await self.bot.channelDict["roles"].send("**Major**", view=major_view)
+            await self.bot.channelDict["roles"].send("**Year**", view=grade_view)
         else:
             self.bot.add_view(pronoun_view)
             self.bot.add_view(in_game_view)
