@@ -57,3 +57,4 @@ class RoleManagerCog(commands.Cog):
             self.bot.add_view(in_game_view)
             self.bot.add_view(rank_view)
             self.bot.add_view(major_view)
+            self.bot.add_view(grade_view)
